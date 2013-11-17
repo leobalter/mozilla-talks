@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="pt-BR" class="fade">
+<head>
+    <meta charset="UTF-8">
+    <title>Privacidade e rastreamento na Web</title>
+    <meta name="viewport" content="width=device-width, user-scalable=yes">
+    <link rel="stylesheet" href="themes/mozilla/styles/style.css">
+</head>
+<body class="list">
+    <!-- Emmet code to generate a clean slide-->
+    <!-- div#foo.slide>div>section>(header>h2)+footer.notes -->
+    <!-- ul.inner>li.active+li*2 -->
+    <header class="caption">
+        <h1>Privacidade e rastreamento na Web</h1>
+        <p class="footer">
+            Leonardo Balter - <a href="http://twitter.com/leobalter">@leobalter</a>
+        </p>
+    </header>
+    <aside class="talkdescription">
+        <p>This slide deck is using the shower system - roll over the previews to see the notes and click any slide to go into presentation mode. Then use keys to navigate. <button onclick="goFullScreen()">Go fullscreen</button></p>
+        <p class="abstract">
+            <strong>Abstract: </strong>
+            Add your talk abstract here
+        </p>
+    </aside>
+
+    <div id="cover" class="slide"><div>
+        <section>
+            <header>
+                <h2>Privacidade e rastreamento na Web</h2>
+            </header>
+            <img src="pictures/privacy/internet.gif" alt="mapa mundial de observação de utilização do IPV4." height="350" class="middle shadow">
+            <small class="byline">Leonardo Balter, conferenciaweb.w3c.br 2013</small>
+            <footer class="notes">Apresentação, quem sou eu, projetos que participo: além de trabalhar como desenvolvedor na Estante Virtual, sou Representante da Mozilla e colaboro em outros projetos open source como o DuckDuckGo</footer>
+        </section>
+    </div></div>
+
+    <div id="agenda" class="slide"><div>
+        <section>
+            <header>
+                <h2>Agenda</h2>
+            </header>
+            <ul>
+                <li>Introdução</li>
+                <li>Atualidade</li>
+                <li>Atores da Web e responsabilidades</li>
+                <li>EME/DRM</li>
+                <li>Soluções e debates</li>
+            </ul> 
+            <footer class="notes">Temas a serem abordados: introdução explicando um básico sobre privacidade e rastreamento; quadro atual sobre o tema; quem são os atores da web e suas responsabilidades; soluções tomadas, soluções que ainda devem ser tomadas e propostas de debates.</footer>
+        </section>
+    </div></div>
+
+    <div id="manifesto" class="slide"><div>
+        <section>
+            <header>
+                <h2>Mozilla Manifesto</h2>
+            </header>
+            <ul class="inner">
+                <li class="active">A Internet é um <mark>recurso global público</mark> que deve <mark>permanecer aberto</mark> e <mark>acessível</mark>.</li>
+                <li>A <mark>Internet deve enriquecer a vida</mark> de cada pessoa.</li>
+                <li>A <mark>segurança</mark> de cada pessoa na Internet é <mark>fundamental</mark> e não pode ser tratada como opcional.</li>
+                <li>Cada pessoa deve ter a <mark>capacidade de moldar suas próprias experiências</mark> na Internet.</li>
+            </ul>
+            <footer class="notes"></footer>
+        </section>
+    </div></div>
+
+    <div id="marcocivil" class="slide">
+        <div>
+            <section>
+                <header>
+                    <h2>Marco Civil</h2>
+                </header>
+                <ul>
+                    <li>Armazenar dados de usuários no Brasil vai atender requisitos de privacidade ou pode criar novos problemas?</li>
+                    <li>Estamos prontos para armazenar todos os dados a nível de serviços oferecidos?</li>
+                    <li>As empresas e pessoas que mantém aplicações estão prontas?</li>
+                </ul>
+                <footer class="notes"></footer>
+            </section>
+        </div>
+    </div>
+
+    <div id="dispositivos" class="slide">
+        <div>
+            <section>
+                <header>
+                    <h2>Web de Dispositivos</h2>
+                </header>
+                <img src="pictures/privacy/hypnophone.jpg" alt="" class="middle">
+                <footer class="notes">Web de dispositivos é a Web fora do desktop, do browser. Dos celulares, videogames, televisões e até os drones, a Web se faz presente no nosso dia a dia.</footer>
+            </section>
+        </div>
+    </div>
+
+    <div id="userdata" class="slide">
+        <div>
+            <section>
+                <header>
+                    <h2>Dados dos usuários</h2>
+                </header>
+                <p><mark>Informações pessoais</mark> de usuários se tornaram um dos maiores <mark>bens lucráveis</mark> em todo o mundo. Podemos afirmar que User Data é o <mark>petróleo digital</mark>?</p>
+                <p>Pra onde vão esses dados? <a href="http://www.mozilla.org/en-US/lightbeam/">Lightbeam para Firefox</a></p>
+                <footer class="notes"></footer>
+            </section>
+        </div>
+    </div>
+
+    <div id="atores" class="slide">
+        <div>
+            <section>
+                <header>
+                    <h2>Atores da Web</h2>
+                    <h3>(ou como é formada a web)</h3>
+                </header>
+                <ul class="inner">
+                    <li class="active">Criadores de Aplicações/sites</li>
+                    <li>Navegadores</li>
+                    <li>Administradores de padronização (W3C, ECMA, etc)</li>
+                    <li>Provedores de conexão e serviços</li>
+                    <li><mark>Usuários</mark></li>
+                </ul>
+                <footer class="notes">O usuário é o ator mais importante da Web, ele tem a capacidade exclusiva te também estar presente em todos os demais papéis e é a única peça fundamental para a existência da web. Sem os demais atores a web ainda existe só com a presença do usuário.</footer>
+            </section>
+        </div>
+    </div>
+
+    <div id="usuario-atento" class="slide">
+        <div>
+            <section>
+                <header>
+                    <h2>O usuário é a peça chave</h2>
+                </header>
+                <p>Após todos os acontecimentos atuais o usuário se tornou <mark>mais atento</mark> à sua privacidade.</p>
+                <p>Aumentou a busca por recursos que garantam os seus direitos nessa área e que <mark>evitem rastreamento</mark> de seus dados pessoais.</p>
+                <p>As pessoas passaram a marcar mais a opção de <mark>Do-Not-Track</mark> em seus navegadores e buscam soluções mais sigilosas como o a rede TOR e o <a href="http://www.duckduckgo.com">DuckDuckGo</a>.</p>
+                <footer class="notes"></footer>
+            </section>
+        </div>
+    </div>
+
+    <div id="brasileiro" class="slide">
+        <div>
+            <section>
+                <header>
+                    <h2>Brasil</h2>
+                </header>
+                <p>O Brasil ainda é um dos países que <mark>menos marcam</mark> a opção de Do-Not-Track.</p>
+                <footer class="notes"></footer>
+            </section>
+        </div>
+    </div>
+
+    <div id="responsabilidades" class="slide">
+        <div>
+            <section>
+                <header>
+                    <h2>Divisão de responsabilidades</h2>
+                </header>
+                <p>Como podemos dividir as <mark>responsabilidades de cada ator da web</mark> para garantirmos cada vez mais a <mark>privacidade do usuário</mark> e permitir que ele tenha a decisão de <mark>quais dados pessoais podem ou não serem rastreados</mark>?</p>
+                <p>Quem pode rastrear esses dados?</p>
+                <footer class="notes"></footer>
+            </section>
+        </div>
+    </div>
+
+    <div id="drm" class="slide">
+        <div>
+            <section>
+                <header>
+                    <h2>DRM/EME como uma brecha, a web não muito aberta</h2>
+                </header>
+                <ul class="inner">
+                    <li class="active">DRM é uma <a href="https://plus.google.com/app/basic/stream/z13qtnxhuojytbjbr04ci3cowrmtehsy324">contradição técnica</a>.</li>
+                    <li>Caixa preta se não especificar um CDM.</li>
+                    <li>O DRM/EME impede a utilização de navegadores alternativos, </li>
+                    <li>Surge como meio para possbilitar alternativa a Flash e Silverlight para conteúdos protegidos por criptografia.</li>
+                    <li>Há outras <a href="https://brendaneich.com/2013/11/today-i-saw-the-future-update/">soluções melhores</a>.</li>
+                </ul>
+                <footer class="notes">
+                    <p>CDM = Content Decryption Module.</p>
+                    <p>EME é uma contradição técnica que afeta restrições legais, interesses do usuário e a sua privacidade.</p>
+                    <p>Sem especificação de um CDM o EME cria uma caixa preta que impede projetos Open Source, que por sua vez garantem alternativas de privacidade a usuários.</p>
+                    <p>A escolha de um navegador alternativo é muitas vezes feita por questões de privacidade, e é ela uma das responsáveis em manter a internet rica, sem permitir que ela seja guiada apenas por interesses comerciais.</p>
+                </footer>
+            </section>
+        </div>
+    </div>
+
+
+<!-- end slide block -->
+    
+    <div id="thanks" class="slide">
+        <div>
+            <section>
+                <header>
+                    <h2>Obrigado!</h2>
+                </header>
+                 <figure class="frame middle swing">
+                    <img src="pictures/privacy/redpanda.jpg" alt="Red panda (Firefox)">
+                </figure>
+                <ul class="oneline demourl">
+                    <li>Leonardo Balter</li>
+                    <li><a href="http://twitter.com/leobalter">@leobalter</a></li>
+                    <li><strong>Slides</strong>: {slideurl}</li>
+                </ul>
+                <small class="credits">
+                    <a href="http://www.flickr.com/photos/yortw/5798336827/">Photo by Yortw</a>
+                </small>
+
+                <footer class="notes"></footer>
+            </section>
+        </div>
+    </div>
+
+    <div class="progress"><div></div></div>
+    <script src="scripts/script.js"></script>
+    <script type="text/javascript">
+      var _gauges = _gauges || [];
+      (function() {
+        var t   = document.createElement('script');
+        t.type  = 'text/javascript';
+        t.async = true;
+        t.id    = 'gauges-tracker';
+        t.setAttribute('data-site-id', '52884b44613f5d7e7e00001a');
+        t.src = '//secure.gaug.es/track.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(t, s);
+      })();
+    </script>
+    <!-- Copyright © 2010–2012 Vadim Makeev — pepelsbey.net -->
+</body>
+</html>
