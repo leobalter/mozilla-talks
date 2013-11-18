@@ -20,7 +20,7 @@
         <p>This slide deck is using the shower system - roll over the previews to see the notes and click any slide to go into presentation mode. Then use keys to navigate. <button onclick="goFullScreen()">Go fullscreen</button></p>
         <p class="abstract">
             <strong>Abstract: </strong>
-            Add your talk abstract here
+            Esses slides abrem tópicos para o debate sobre o tema de privacidade e rastreamento na Web durante a Conferência W3C.br 2013. A ideia é de trazer tópicos a serem discutidos e incentivar o debate direcionado ao tema, porém sem intenção de obstruir outros temas relacionados. 
         </p>
     </aside>
 
@@ -43,6 +43,11 @@
             <ul>
                 <li>Introdução</li>
                 <li>Atualidade</li>
+                    <ul>
+                        <li>Web de dispositivos</li>
+                        <li>Marco Civil</li>
+                        <li>Dados dos usuários</li>
+                    </ul>
                 <li>Atores da Web e responsabilidades</li>
                 <li>EME/DRM</li>
                 <li>Soluções e debates</li>
@@ -57,7 +62,7 @@
                 <h2>Mozilla Manifesto</h2>
             </header>
             <ul class="inner">
-                <li class="active">A Internet é um <mark>recurso global público</mark> que deve <mark>permanecer aberto</mark> e <mark>acessível</mark>.</li>
+                <li class="active">A Internet é um <mark>recurso global público</mark> que deve <mark>permanecer aberta</mark> e <mark>acessível</mark>.</li>
                 <li>A <mark>Internet deve enriquecer a vida</mark> de cada pessoa.</li>
                 <li>A <mark>segurança</mark> de cada pessoa na Internet é <mark>fundamental</mark> e não pode ser tratada como opcional.</li>
                 <li>Cada pessoa deve ter a <mark>capacidade de moldar suas próprias experiências</mark> na Internet.</li>
@@ -72,12 +77,16 @@
                 <header>
                     <h2>Marco Civil</h2>
                 </header>
-                <ul>
-                    <li>Armazenar dados de usuários no Brasil vai atender requisitos de privacidade ou pode criar novos problemas?</li>
-                    <li>Estamos prontos para armazenar todos os dados a nível de serviços oferecidos?</li>
-                    <li>As empresas e pessoas que mantém aplicações estão prontas?</li>
+                <ul class="inner">
+                    <li class="active">Dados de usuários brasileiros armazenados em território nacional.</li>
+                    <li>Serviços oferecidos estão prontos?</li>
+                    <li>As empresas e pessoas estão preparadas?</li>
                 </ul>
-                <footer class="notes"></footer>
+                <footer class="notes">
+                    <p>Armazenar dados de usuários no Brasil atende requisitos de privacidade ou cria novos problemas?</p>
+                    <p>Estamos prontos para armazenar todos os dados a nível de serviços oferecidos?</p>
+                    <p>Empresas (americanas) que enviavam dados para a NSA também utilizam data centers no Brasil, e mesmo assim não deixavam de enviar essas informações.</p>
+                </footer>
             </section>
         </div>
     </div>
@@ -102,7 +111,7 @@
                 </header>
                 <p><mark>Informações pessoais</mark> de usuários se tornaram um dos maiores <mark>bens lucráveis</mark> em todo o mundo. Podemos afirmar que User Data é o <mark>petróleo digital</mark>?</p>
                 <p>Pra onde vão esses dados? <a href="http://www.mozilla.org/en-US/lightbeam/">Lightbeam para Firefox</a></p>
-                <footer class="notes"></footer>
+                <footer class="notes">Na intenção de trazer conhecimento ao usuário para onde seus dados vão, a Mozilla criou o Lightbeam, que mostra gráficos das redes acessadas diretamente, indiretamente e como elas se conectam. Quando acessamos um site, pra quantos locais nossos dados vão? E como podemos controlar isso?</footer>
             </section>
         </div>
     </div>
@@ -132,10 +141,16 @@
                 <header>
                     <h2>O usuário é a peça chave</h2>
                 </header>
-                <p>Após todos os acontecimentos atuais o usuário se tornou <mark>mais atento</mark> à sua privacidade.</p>
-                <p>Aumentou a busca por recursos que garantam os seus direitos nessa área e que <mark>evitem rastreamento</mark> de seus dados pessoais.</p>
-                <p>As pessoas passaram a marcar mais a opção de <mark>Do-Not-Track</mark> em seus navegadores e buscam soluções mais sigilosas como o a rede TOR e o <a href="http://www.duckduckgo.com">DuckDuckGo</a>.</p>
-                <footer class="notes"></footer>
+                <ul class="inner">
+                    <li class="active">Usuários mais atentos</li>
+                    <li>Recursos que garantam seus direitos e evitem rastreamento de dados pessoais.</li>                
+                    <li>Do-Not-Track, <a href="http://www.duckduckgo.com">DuckDuckGo</a>, rede TOR, etc.</li>
+                </ul>
+                <footer class="notes">
+                    <p>Após todos os acontecimentos atuais sobre espionagem na internet o usuário se tornou <mark>mais atento</mark> à sua privacidade.</p>
+                    <p>Aumentou a busca por recursos que garantam os seus direitos nessa área e que <mark>evitem rastreamento</mark> de seus dados pessoais.</p>
+                    <p>As pessoas passaram a marcar mais a opção de <mark>Do-Not-Track</mark> em seus navegadores e buscam soluções mais sigilosas como o a rede TOR e o <a href="http://www.duckduckgo.com">DuckDuckGo</a>.</p>
+                </footer>
             </section>
         </div>
     </div>
@@ -147,7 +162,7 @@
                     <h2>Brasil</h2>
                 </header>
                 <p>O Brasil ainda é um dos países que <mark>menos marcam</mark> a opção de Do-Not-Track.</p>
-                <footer class="notes"></footer>
+                <footer class="notes">Mesmo com um aumento da preocupação do usuário e mais informação sobre como e do que ele deve se proteger, o Brasil ainda tem um dos menores índices de adoção de Do No Track e recursos de privacidade.</footer>
             </section>
         </div>
     </div>
@@ -158,7 +173,7 @@
                 <header>
                     <h2>Divisão de responsabilidades</h2>
                 </header>
-                <p>Como podemos dividir as <mark>responsabilidades de cada ator da web</mark> para garantirmos cada vez mais a <mark>privacidade do usuário</mark> e permitir que ele tenha a decisão de <mark>quais dados pessoais podem ou não serem rastreados</mark>?</p>
+                <p>Como dividir as <mark>responsabilidades de cada ator da web</mark> para garantir cada vez mais a <mark>privacidade do usuário</mark> e permitir que ele tenha a decisão de <mark>quais dados pessoais podem ou não serem rastreados</mark>?</p>
                 <p>Quem pode rastrear esses dados?</p>
                 <footer class="notes"></footer>
             </section>
@@ -169,7 +184,7 @@
         <div>
             <section>
                 <header>
-                    <h2>DRM/EME como uma brecha, a web não muito aberta</h2>
+                    <h2>DRM/EME como uma brecha para uma web não muito aberta</h2>
                 </header>
                 <ul class="inner">
                     <li class="active">DRM é uma <a href="https://plus.google.com/app/basic/stream/z13qtnxhuojytbjbr04ci3cowrmtehsy324">contradição técnica</a>.</li>
@@ -206,7 +221,7 @@
                     <li><strong>Slides</strong>: {slideurl}</li>
                 </ul>
                 <small class="credits">
-                    <a href="http://www.flickr.com/photos/yortw/5798336827/">Photo by Yortw</a>
+                    <a href="http://www.flickr.com/photos/yortw/5798336827/">Foto de Yortw</a>. Agradecimentos: Clécio Bachini, Edgard Balter, Luca Toledo, Alex Fowler e Gabriela Balter.
                 </small>
 
                 <footer class="notes"></footer>
