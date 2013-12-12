@@ -1,0 +1,23 @@
+<input type="file" id="take-picture" accept="image/*">
+<img src="about:blank" alt="" id="show-picture">
+
+<script>
+var takePicture = document.querySelector("#take-picture");
+var showPicture = document.querySelector("#show-picture");
+var URL = window.URL || window.webkitURL;
+
+takePicture.onchange = function (event) {
+    // Get a reference to the taken picture or chosen file
+    var files = event.target.files,
+        file, imgURL;
+
+    if (files && files.length > 0) {
+        file = files[0];
+
+        imgURL = URL.createObjectURL(files[0]);
+    }
+
+    showPicture.src = imgURL;
+    URL.revokeObjectURL(imgURL);
+};
+</script>

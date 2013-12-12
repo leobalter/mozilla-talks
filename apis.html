@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="pt-BR" class="fade">
+<head>
+    <meta charset="UTF-8">
+    <title>Amazing APIs</title>
+    <meta name="viewport" content="width=device-width, user-scalable=yes">
+    <link rel="stylesheet" href="themes/mozilla/styles/style.css">
+</head>
+<body class="list">
+    <!-- Emmet code to generate a clean slide-->
+    <!-- div#foo.slide>div>section>(header>h2)+footer.notes -->
+    <!-- ul.inner>li.active+li*2 -->
+    <header class="caption">
+        <h1>Amazing APIs</h1>
+        <p class="footer">
+            Leonardo Balter - <a href="http://twitter.com/leobalter">@leobalter</a>
+        </p>
+    </header>
+    <aside class="talkdescription">
+        <p>This slide deck is using the shower system - roll over the previews to see the notes and click any slide to go into presentation mode. Then use keys to navigate. <button onclick="goFullScreen()">Go fullscreen</button></p>
+        <p class="abstract">
+            <strong>Abstract: </strong>
+            Talk apresentado no FrontInRecife 2013 sobre APIs JavaScript que já existem na Web.
+        </p>
+    </aside>
+
+    <div id="cover" class="slide"><div>
+        <section>
+            <header>
+                <h2>The Amazing WebAPIs</h2>
+            </header>
+            
+            <small class="byline">Leonardo Balter, FrontInRecife 2013</small>
+            <footer class="notes">Apresentação, quem sou eu, projetos que participo: além de trabalhar como desenvolvedor na Estante Virtual, sou Representante da Mozilla e colaboro em outros projetos open source como o DuckDuckGo</footer>
+        </section>
+    </div></div>
+
+    <div id="agenda" class="slide"><div>
+        <section>
+            <header>
+                <h2>Agenda</h2>
+            </header>
+            <ul>
+                <li>Introdução</li>
+                <li>WebAPIs já conhecidas</li>
+                <li>Por que essas APIs?</li>
+            </ul> 
+            <footer class="notes">Temas a serem abordados</footer>
+        </section>
+    </div></div>
+
+    <div id="introducao" class="slide">
+        <div>
+            <section>
+                <header>
+                    <h2>O que é WebAPI?</h2>
+                </header>
+                <p>APIs são Interfaces de Programação de uma Aplicação que possibilitam criarmos interações externas.</p>
+                <p>No caso da Web, são interfaces para interagirmos com o navegador e em JavaScript!</p>
+                <footer class="notes"></footer>
+            </section>
+        </div>
+    </div>
+
+    <div id="dom" class="slide">
+        <div>
+            <section>
+                <header>
+                    <h2>A mais famosa</h2>
+                </header>
+                <p>Acredite, vocês já usaram APIs web, mesmo que achem que isso nunca aconteceu!</p>
+                <pre>
+                    <code>document.getElementById( 'raa' );</code>
+                </pre>
+                <small class="byline">Ref. do DOM: <a href="https://developer.mozilla.org/en-US/docs/DOM/DOM_Reference">https://developer.mozilla.org/en-US/docs/DOM/DOM_Reference</a></small>
+                <footer class="notes">Não há API mais famosa que o próprio DOM!</footer>
+            </section>
+        </div>
+    </div>
+
+    <div id="outrasapis" class="slide">
+        <div>
+            <section>
+                <header>
+                    <h2>Tipos de APIs</h2>
+                </header>
+                <ul class="inner">
+                    <li class="active">Document Object Model (DOM)</li>
+                    <li>Devices API</li>
+                    <li>Communication APIs</li>
+                    <li>Data management APIs</li>
+                    <li>Privileged APIs</li>
+                    <li>Certified APIs</li>
+                </ul>
+                <small class="byline">Ref: <a href="https://developer.mozilla.org/en-US/docs/Web/Reference/API">https://developer.mozilla.org/en-US/docs/Web/Reference/API</a></small>
+                <footer class="notes"></footer>
+            </section>
+        </div>
+    </div>
+
+    <div id="todasapis" class="slide">
+        <div>
+            <section>
+                <header>
+                    <h2>You gotta catch them all!</h2>
+                </header>
+                <p>Há uma lista na MDN com várias APIs disponíveis: <a href="https://developer.mozilla.org/en-US/docs/Web/API">https://developer.mozilla.org/en-US/docs/Web/API</a></p>
+                <ul class="inner">
+                    <li class="active"><a href="https://developer.mozilla.org/en-US/docs/WebRTC/taking_webcam_photos">WebRTC</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web_Audio_API">Web Audio API</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/API/Gamepad">Gamepad API</a></li>
+                </ul>
+                <small class="byline">Outra referência: <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/API">MDN: Guide to Web APIs</a></small>
+                <footer class="notes"></footer>
+            </section>
+        </div>
+    </div>
+    
+    <div id="exemplos" class="slide">
+        <div>
+            <section>
+                <header>
+                    <h2>Exemplos:</h2>
+                </header>
+                <ul class="inner">
+                    <li class="active"><a href="http://eshiota.github.io/retro-audio-js/">RetroJS</a></li>
+                    <li><a href="http://chat.meatspac.es">Meatspaces Chat</a></li>
+                    <!-- TODO: link -->
+                    <li><a href="">Gamepad + SpyTank</a></li>
+                </ul>
+                <footer class="notes"></footer>
+            </section>
+        </div>
+    </div>
+
+<!-- end slide block -->
+    
+    <div id="thanks" class="slide">
+        <div>
+            <section>
+                <header>
+                    <h2>Obrigado!</h2>
+                </header>
+                 <figure class="frame middle swing">
+                    <img src="pictures/privacy/redpanda.jpg" alt="Red panda (Firefox)">
+                </figure>
+                <ul class="oneline demourl">
+                    <li>Leonardo Balter</li>
+                    <li><a href="http://twitter.com/leobalter">@leobalter</a></li>
+                    <li><strong>Slides</strong>: http://leobalter.github.com/mozilla-talks/apis.html</li>
+                </ul>
+                <small class="credits">
+                    <a href="http://www.flickr.com/photos/yortw/5798336827/">Foto de Yortw</a>.
+                </small>
+
+                <footer class="notes"></footer>
+            </section>
+        </div>
+    </div>
+
+    <div class="progress"><div></div></div>
+    <script src="scripts/script.js"></script>
+    <script type="text/javascript">
+      var _gauges = _gauges || [];
+      (function() {
+        var t   = document.createElement('script');
+        t.type  = 'text/javascript';
+        t.async = true;
+        t.id    = 'gauges-tracker';
+        t.setAttribute('data-site-id', '52884b44613f5d7e7e00001a');
+        t.src = '//secure.gaug.es/track.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(t, s);
+      })();
+    </script>
+    <!-- Copyright © 2010–2012 Vadim Makeev — pepelsbey.net -->
+</body>
+</html>
