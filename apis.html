@@ -98,6 +98,30 @@
         </div>
     </div>
 
+    <div id="battery" class="slide">
+        <div>
+            <section>
+              <header>
+                <h2>Battery API</h2>
+              </header>
+                <pre>
+                  <code>var b = navigator.battery,</code>
+                  <code>    level = Math.round(b.level * 100) + "%",</code>
+                  <code>    charging = (b.charging) ? "" : "not ",</code>
+                  <code>    chargeTime = parseInt(b.chargingTime / 60, 10),</code>
+                  <code>    dischargeTime = parseInt(b.dischargingTime/60,10);</code>
+                  <code>b.addEventListener("levelchange", show);</code>
+                  <code>b.addEventListener("chargingchange", show);</code>
+                  <code>b.addEventListener("chargingtimechange", show);</code>
+                  <code>b.addEventListener("dischargingtimechange", show);</code>
+                </pre>
+              <footer class="notes">
+                Exemplo de uso da api de bateria, funciona tambem no navegador.
+              </footer>
+            </section>
+        </div>
+    </div>
+
     <div id="todasapis" class="slide">
         <div>
             <section>
