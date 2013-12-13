@@ -139,12 +139,95 @@
             </section>
         </div>
     </div>
+
+    <div id="audioapi" class="slide">
+        <div>
+            <section>
+                <header>
+                    <h2>Web Audio API</h2>
+                </header>
+                <pre>
+                    <code style="background-color: yellow">var context = new window.AudioContext();</code>
+                    <code>var request = new XMLHttpRequest();</code>
+                    <code>request.open("GET", audioFileUrl, true);</code>
+                    <code>request.responseType = "arraybuffer";</code>
+                    <code>request.onload = function() {</code>
+                    <code>    var audioData = request.response;</code>
+                    <code>    createSoundSource(audioData);</code>
+                    <code>};</code>
+                    <code>request.send();</code>
+                </pre>
+            </section>
+        </div>
+    </div>
+
+
+    <div id="audiotag" class="slide">
+        <div>
+            <section>
+                <header>
+                    <h2>Web Audio API + Audio tag</h2>
+                </header>
+                <pre>
+                    <code>var audioElement = document.querySelector('audio');</code>
+                    <code>var mediaSourceNode = </code>
+                    <code>        context.createMediaElementSource(audioElement);</code>                    
+                    <code>var filter = context.createBiquadFilter();</code>
+                    <code>mediaSourceNode.connect(filter);</code>
+                    <code>filter.connect(context.destination);</code>
+                </pre>
+                <small class="byline">Ref.: <a href="http://www.html5rocks.com/en/tutorials/webaudio/games/">http://www.html5rocks.com/en/tutorials/webaudio/games/</a></small>
+            </section>
+        </div>
+    </div>
     
+
+    <div id="gamepad" class="slide">
+        <div>
+            <section>
+                <header>
+                    <h2>Gamepad API</h2>
+                </header>
+                <pre>
+                    <code>window.addEventListener('gamepadconnected', function(e) {</code>
+                    <code>    e.gamepad; // => Ta tudo aqui!</code>
+                    <code>});</code>
+                </pre>
+                <small class="byline">Ref.: <a href="https://github.com/kallaspriit/HTML5-JavaScript-Gamepad-Controller-Library">https://github.com/kallaspriit/HTML5-JavaScript-Gamepad-Controller-Library</a></small>
+                <footer class="notes"></footer>
+            </section>
+        </div>
+    </div>
+
+    <div id="getusermedia" class="slide">
+        <div>
+            <section>
+                <header>
+                    <h2>getUserMedia</h2>
+                </header>
+                <pre>
+                    <code>navigator.getUserMedia({ video: true, audio: false },</code>
+                    <code>    function(localMediaStream) {</code>
+                    <code>      var video = document.querySelector('video');</code>
+                    <code>      video.src = </code>
+                    <code>          window.URL.createObjectURL(localMediaStream);</code>
+                    <code>      video.play();</code>
+                    <code>    },</code>
+                    <code>    function(err) { throw 'ferrou'; }</code>
+                    <code>});</code>
+                </pre>
+            </section>
+        </div>
+    </div>
+
+
+    
+
     <div id="exemplos" class="slide">
         <div>
             <section>
                 <header>
-                    <h2>Exemplos:</h2>
+                    <h2>Outros Exemplos</h2>
                 </header>
                 <ul class="inner">
                     <li class="active"><a href="http://eshiota.github.io/retro-audio-js/">RetroJS</a></li>
@@ -156,6 +239,7 @@
             </section>
         </div>
     </div>
+
 
 <!-- end slide block -->
     
